@@ -1,11 +1,15 @@
 ConnectFour
 ===========
 
-http://en.wikipedia.org/wiki/Connect_Four
+This is a course assignment of Stat 327 in UW-Madison. Here's my solution of artificial intelligence on connect four game. The rule and further references are given in Wikipedia: http://en.wikipedia.org/wiki/Connect_Four .
 
-Lines 127~130 in file "hw3_revised.R" import functions for computer player.
+My solution is by no means a perfect solution to this problem, but rather a intuition of how human might play this game and simulate its process by computer.
 
-"ninarow.R" contains one function that is of the same spirit as four.in.a.row(), but generalized to n=2,3,4. 
+---------------------------below is the breif explanations on the files---------------------
+
+Lines 127~130 in file "hw3_extended.R" import functions for computer player.
+
+"n_in_a_row.R" contains one function that is of the same spirit as four.in.a.row(), but generalized to n=2,3,4. 
 
 "count.R" contains a function called count(), which scans the board and counts the continuous checks for either side player, returning a vector in to [int, int, int, int], indicating the number of continuous checks of one, two, three and four. count() has a helper function extract_continue().
 
